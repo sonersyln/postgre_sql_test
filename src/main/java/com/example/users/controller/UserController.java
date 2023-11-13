@@ -27,6 +27,7 @@ public class UserController {
         this.userService.addUser(user);
     }
 
+
     @PutMapping("{id}")
     public void updateUser(@PathVariable int id, @RequestBody User user) throws Exception {
         this.userService.update(id, user);
